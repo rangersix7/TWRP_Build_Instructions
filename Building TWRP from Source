@@ -1,0 +1,33 @@
+#
+#
+#                                      Building TWRP from Source
+#
+#   Make a working dir  twrp-12.1
+#
+#   cd to twrp-12.1
+#
+#   initialize repo
+#   
+#   repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-12.1
+#
+#   repo sync
+#
+#   When finished add your device to twrp source.
+#
+#   Then build.
+#
+#   cd to twrp-12.1
+#
+#   export ALLOW_MISSING_DEPENDENCIES=true
+#
+#   export USE_CCACHE=1
+#   
+#   export CCACHE_EXEC=/usr/bin/ccache
+#   
+#   ccache -M 20G
+#
+#   . build/envsetup.sh    
+#
+#   lunch twrp_tesla-eng
+#
+#   mka bootimage
